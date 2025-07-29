@@ -43,5 +43,13 @@ ros2 topic pub --once /input_numbers tutorial_interfaces/msg/Num "{num1: 10.0, n
 
 For more details and commands, please see my ros_comms.txt file where I took notes.
 
+Video overview: https://www.youtube.com/watch?v=HJAE5Pk8Nyw&t
+
 Whats in the homework?
+
+This repository contains a simple ros2 implementation that reflects the base structure of a ros system. Three nodes are present in the implementation numbers, divide and output.
+The numbers node generates two random numbers, and publishes them in a custom message structure.
+The divide node is a listener subscribed to the /input_numbers topic, where the numbers node publishes the nominator and denominator. The divide node then carries out the division, handling the division by zero error, then publishes the results again onto the /division_result topic.
+A third node, output, is subscibed to this topic, and displays the result of the division. Division by zero errors are logged and propagated trough node 2 and 3. Use rqt_graph (command) to show the topics and nodes.
+You can send a division by zero message with the custom command I provided.
 
