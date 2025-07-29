@@ -43,7 +43,10 @@ ros2 topic pub --once /input_numbers tutorial_interfaces/msg/Num "{num1: 10.0, n
 
 For more details and commands, please see my ros_comms.txt file where I took notes.
 
+Sources:
 Video overview: https://www.youtube.com/watch?v=HJAE5Pk8Nyw&t
+Custom messages: https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Custom-ROS2-Interfaces.html
+Humble ros: https://docs.ros.org/en/humble/index.html
 
 Whats in the homework?
 
